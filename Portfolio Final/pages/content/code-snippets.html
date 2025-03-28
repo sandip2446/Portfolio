@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Snippets - Sandip Acharya | Senior .NET Developer</title>
+    <meta name="description"
+        content="A collection of useful code snippets, examples, and best practices for .NET development.">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/code-snippets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-csharp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-typescript.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="../../pages/main/index.html" class="nav-logo">
+                <i class="fas fa-code"></i> Sandip Acharya
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../pages/main/index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="../../pages/about/about.html" class="nav-link"><i class="fas fa-user"></i> About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../pages/about/about.html"><i class="fas fa-user-circle"></i> About Me</a></li>
+                        <li><a href="../../pages/portfolio/resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+                        <li><a href="../../pages/portfolio/achievements.html"><i class="fas fa-trophy"></i>
+                                Achievements</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../../pages/portfolio/projects.html" class="nav-link"><i
+                            class="fas fa-project-diagram"></i> Portfolio</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../pages/portfolio/projects.html"><i class="fas fa-code-branch"></i>
+                                Projects</a></li>
+                        <li><a href="../../pages/portfolio/case-studies.html"><i class="fas fa-book"></i> Case
+                                Studies</a></li>
+                        <li><a href="../../pages/portfolio/gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../blog.html" class="nav-link"><i class="fas fa-blog"></i> Content</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../blog.html"><i class="fas fa-newspaper"></i> Blog</a></li>
+                        <li><a href="../technical-blog.html"><i class="fas fa-code"></i> Technical Blog</a></li>
+                        <li><a href="../code-snippets.html" class="active"><i class="fas fa-code"></i> Code Snippets</a>
+                        </li>
+                        <li><a href="../book-reviews.html"><i class="fas fa-book-reader"></i> Book Reviews</a></li>
+                        <li><a href="../research.html"><i class="fas fa-microscope"></i> Research</a></li>
+                        <li><a href="../resources.html"><i class="fas fa-tools"></i> Resources</a></li>
+                        <li><a href="../tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../../pages/community/community.html" class="nav-link"><i class="fas fa-users"></i>
+                        Community</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../pages/community/community.html"><i class="fas fa-users"></i> Community</a>
+                        </li>
+                        <li><a href="../../pages/community/faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="../../pages/community/tech-stack.html"><i class="fas fa-layer-group"></i> Tech
+                                Stack</a></li>
+                        <li><a href="../../pages/community/testimonials.html"><i class="fas fa-comments"></i>
+                                Testimonials</a></li>
+                        <li><a href="../../pages/community/timeline.html"><i class="fas fa-history"></i> Timeline</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../../pages/speaking/speaking.html" class="nav-link"><i class="fas fa-microphone"></i>
+                        Speaking</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../pages/speaking/speaking.html"><i class="fas fa-microphone"></i> Speaking</a>
+                        </li>
+                        <li><a href="../../pages/speaking/speaking-schedule.html"><i class="fas fa-calendar-alt"></i>
+                                Schedule</a></li>
+                        <li><a href="../../pages/speaking/workshops.html"><i class="fas fa-chalkboard-teacher"></i>
+                                Workshops</a></li>
+                        <li><a href="../../pages/speaking/media.html"><i class="fas fa-video"></i> Media</a></li>
+                        <li><a href="../../pages/speaking/publications.html"><i class="fas fa-book"></i>
+                                Publications</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../pages/main/contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                </li>
+                <li class="dropdown">
+                    <a href="../../pages/legal/terms.html" class="nav-link"><i class="fas fa-gavel"></i> Legal</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../../pages/legal/terms.html"><i class="fas fa-file-contract"></i> Terms</a></li>
+                        <li><a href="../../pages/legal/privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy
+                                Policy</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Code Snippets Hero -->
+    <section class="snippets-hero">
+        <div class="container">
+            <h1 class="scroll-animate"><i class="fas fa-code"></i> Code Snippets</h1>
+            <p class="scroll-animate">Useful code examples and best practices for .NET development</p>
+        </div>
+    </section>
+
+    <!-- Snippet Categories -->
+    <section class="snippet-categories">
+        <div class="container">
+            <div class="categories-filters">
+                <button class="filter-btn active" data-category="all">
+                    <i class="fas fa-th-large"></i> All
+                </button>
+                <button class="filter-btn" data-category="csharp">
+                    <i class="fab fa-csharp"></i> C#
+                </button>
+                <button class="filter-btn" data-category="aspnet">
+                    <i class="fab fa-dotnet"></i> ASP.NET Core
+                </button>
+                <button class="filter-btn" data-category="javascript">
+                    <i class="fab fa-js"></i> JavaScript
+                </button>
+                <button class="filter-btn" data-category="typescript">
+                    <i class="fab fa-ts"></i> TypeScript
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Snippets Grid -->
+    <section class="snippets-grid">
+        <div class="container">
+            <!-- C# Snippet -->
+            <div class="snippet-card scroll-animate" data-category="csharp">
+                <div class="snippet-header">
+                    <h3><i class="fas fa-database"></i> Generic Repository Pattern</h3>
+                    <span class="snippet-category">C#</span>
+                </div>
+                <div class="snippet-description">
+                    <p>A reusable generic repository implementation for Entity Framework Core.</p>
+                </div>
+                <pre><code class="language-csharp">
+public interface IGenericRepository<T> where T : class
+{
+    Task<T> GetByIdAsync(int id);
+    Task<IEnumerable<T>> GetAllAsync();
+    Task<T> AddAsync(T entity);
+    Task UpdateAsync(T entity);
+    Task DeleteAsync(T entity);
+}
+
+public class GenericRepository<T> : IGenericRepository<T> where T : class
+{
+    private readonly DbContext _context;
+    private readonly DbSet<T> _dbSet;
+
+    public GenericRepository(DbContext context)
+    {
+        _context = context;
+        _dbSet = context.Set<T>();
+    }
+
+    public async Task<T> GetByIdAsync(int id)
+    {
+        return await _dbSet.FindAsync(id);
+    }
+
+    public async Task<IEnumerable<T>> GetAllAsync()
+    {
+        return await _dbSet.ToListAsync();
+    }
+
+    public async Task<T> AddAsync(T entity)
+    {
+        await _dbSet.AddAsync(entity);
+        await _context.SaveChangesAsync();
+        return entity;
+    }
+
+    public async Task UpdateAsync(T entity)
+    {
+        _dbSet.Update(entity);
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task DeleteAsync(T entity)
+    {
+        _dbSet.Remove(entity);
+        await _context.SaveChangesAsync();
+    }
+}
+                </code></pre>
+                <div class="snippet-footer">
+                    <div class="snippet-meta">
+                        <span><i class="fas fa-download"></i> 1.2k downloads</span>
+                        <span><i class="fas fa-star"></i> 4.8</span>
+                    </div>
+                    <button class="copy-btn">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+            </div>
+
+            <!-- ASP.NET Core Snippet -->
+            <div class="snippet-card scroll-animate" data-category="aspnet">
+                <div class="snippet-header">
+                    <h3><i class="fas fa-shield-alt"></i> JWT Authentication Middleware</h3>
+                    <span class="snippet-category">ASP.NET Core</span>
+                </div>
+                <div class="snippet-description">
+                    <p>Custom JWT authentication middleware for ASP.NET Core applications.</p>
+                </div>
+                <pre><code class="language-csharp">
+public class JwtAuthenticationMiddleware
+{
+    private readonly RequestDelegate _next;
+    private readonly JwtSettings _jwtSettings;
+
+    public JwtAuthenticationMiddleware(RequestDelegate next, IOptions<JwtSettings> jwtSettings)
+    {
+        _next = next;
+        _jwtSettings = jwtSettings.Value;
+    }
+
+    public async Task InvokeAsync(HttpContext context)
+    {
+        var token = context.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+
+        if (string.IsNullOrEmpty(token))
+        {
+            await _next(context);
+            return;
+        }
+
+        try
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_jwtSettings.Secret);
+            tokenHandler.ValidateToken(token, new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuer = true,
+                ValidIssuer = _jwtSettings.Issuer,
+                ValidateAudience = true,
+                ValidAudience = _jwtSettings.Audience,
+                ClockSkew = TimeSpan.Zero
+            }, out SecurityToken validatedToken);
+
+            var jwtToken = (JwtSecurityToken)validatedToken;
+            var userId = int.Parse(jwtToken.Claims.First(x => x.Type == "id").Value);
+            var userName = jwtToken.Claims.First(x => x.Type == "name").Value;
+
+            context.Items["UserId"] = userId;
+            context.Items["UserName"] = userName;
+        }
+        catch
+        {
+            context.Response.StatusCode = 401;
+            return;
+        }
+
+        await _next(context);
+    }
+}
+                </code></pre>
+                <div class="snippet-footer">
+                    <div class="snippet-meta">
+                        <span><i class="fas fa-download"></i> 2.5k downloads</span>
+                        <span><i class="fas fa-star"></i> 4.9</span>
+                    </div>
+                    <button class="copy-btn">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+            </div>
+
+            <!-- JavaScript Snippet -->
+            <div class="snippet-card scroll-animate" data-category="javascript">
+                <div class="snippet-header">
+                    <h3><i class="fas fa-clock"></i> Debounce Function</h3>
+                    <span class="snippet-category">JavaScript</span>
+                </div>
+                <div class="snippet-description">
+                    <p>A utility function to debounce event handlers and API calls.</p>
+                </div>
+                <pre><code class="language-javascript">
+function debounce(func, wait) {
+    let timeout;
+    
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Usage example:
+const handleSearch = debounce((searchTerm) => {
+    // API call or search logic
+    console.log('Searching for:', searchTerm);
+}, 300);
+
+// Event listener
+searchInput.addEventListener('input', (e) => {
+    handleSearch(e.target.value);
+});
+                </code></pre>
+                <div class="snippet-footer">
+                    <div class="snippet-meta">
+                        <span><i class="fas fa-download"></i> 3.1k downloads</span>
+                        <span><i class="fas fa-star"></i> 4.7</span>
+                    </div>
+                    <button class="copy-btn">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+            </div>
+
+            <!-- TypeScript Snippet -->
+            <div class="snippet-card scroll-animate" data-category="typescript">
+                <div class="snippet-header">
+                    <h3><i class="fas fa-network-wired"></i> Type-Safe API Client</h3>
+                    <span class="snippet-category">TypeScript</span>
+                </div>
+                <div class="snippet-description">
+                    <p>A type-safe API client using TypeScript and Axios.</p>
+                </div>
+                <pre><code class="language-typescript">
+interface ApiResponse<T> {
+    data: T;
+    status: number;
+    message?: string;
+}
+
+class ApiClient {
+    private baseUrl: string;
+    private headers: Record<string, string>;
+
+    constructor(baseUrl: string, headers: Record<string, string> = {}) {
+        this.baseUrl = baseUrl;
+        this.headers = headers;
+    }
+
+    async get<T>(endpoint: string): Promise<ApiResponse<T>> {
+        try {
+            const response = await axios.get<T>(`${this.baseUrl}${endpoint}`, {
+                headers: this.headers
+            });
+            return {
+                data: response.data,
+                status: response.status
+            };
+        } catch (error) {
+            throw this.handleError(error);
+        }
+    }
+
+    async post<T>(endpoint: string, data: any): Promise<ApiResponse<T>> {
+        try {
+            const response = await axios.post<T>(`${this.baseUrl}${endpoint}`, data, {
+                headers: this.headers
+            });
+            return {
+                data: response.data,
+                status: response.status
+            };
+        } catch (error) {
+            throw this.handleError(error);
+        }
+    }
+
+    private handleError(error: any): Error {
+        if (error.response) {
+            return new Error(error.response.data.message || 'An error occurred');
+        }
+        return new Error('Network error');
+    }
+}
+                </code></pre>
+                <div class="snippet-footer">
+                    <div class="snippet-meta">
+                        <span><i class="fas fa-download"></i> 1.8k downloads</span>
+                        <span><i class="fas fa-star"></i> 4.6</span>
+                    </div>
+                    <button class="copy-btn">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+            </div>
+
+            <!-- ASP.NET Core MVC & Web API Snippet -->
+            <div class="snippet-card scroll-animate" data-category="aspnet">
+                <div class="snippet-header">
+                    <h3><i class="fas fa-server"></i> ASP.NET Core MVC & Web API Setup</h3>
+                    <span class="snippet-category">ASP.NET Core</span>
+                </div>
+                <div class="snippet-description">
+                    <p>A comprehensive setup for ASP.NET Core MVC with Web API, including dependency injection, routing,
+                        and middleware configuration.</p>
+                </div>
+                <pre><code class="language-csharp">
+// Program.cs
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container
+builder.Services.AddControllersWithViews()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = null;
+        options.JsonSerializerOptions.WriteIndented = true;
+    });
+
+// Add API Versioning
+builder.Services.AddApiVersioning(options =>
+{
+    options.DefaultApiVersion = new ApiVersion(1, 0);
+    options.AssumeDefaultVersionWhenUnspecified = true;
+    options.ReportApiVersions = true;
+});
+
+// Add Swagger/OpenAPI
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description = "JWT Authorization header using the Bearer scheme",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer"
+    });
+});
+
+// Add Authentication
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+        };
+    });
+
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
+
+// Add AutoMapper
+builder.Services.AddAutoMapper(typeof(Program));
+
+// Add DbContext
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+    app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+app.UseCors("AllowAll");
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllers();
+
+app.Run();
+
+// Example Controller
+[ApiController]
+[Route("api/[controller]")]
+[ApiVersion("1.0")]
+public class ProductsController : ControllerBase
+{
+    private readonly IProductService _productService;
+    private readonly IMapper _mapper;
+    private readonly ILogger<ProductsController> _logger;
+
+    public ProductsController(
+        IProductService productService,
+        IMapper mapper,
+        ILogger<ProductsController> logger)
+    {
+        _productService = productService;
+        _mapper = mapper;
+        _logger = logger;
+    }
+
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<ProductDto>>> GetProducts()
+    {
+        try
+        {
+            var products = await _productService.GetAllProductsAsync();
+            var productDtos = _mapper.Map<IEnumerable<ProductDto>>(products);
+            return Ok(productDtos);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error getting products");
+            return StatusCode(500, "Internal server error");
+        }
+    }
+
+    [HttpGet("{id}")]
+    public async Task<ActionResult<ProductDto>> GetProduct(int id)
+    {
+        var product = await _productService.GetProductByIdAsync(id);
+        if (product == null)
+            return NotFound();
+
+        var productDto = _mapper.Map<ProductDto>(product);
+        return Ok(productDto);
+    }
+
+    [HttpPost]
+    [Authorize(Roles = "Admin")]
+    public async Task<ActionResult<ProductDto>> CreateProduct(CreateProductDto createProductDto)
+    {
+        var product = _mapper.Map<Product>(createProductDto);
+        var createdProduct = await _productService.CreateProductAsync(product);
+        
+        var productDto = _mapper.Map<ProductDto>(createdProduct);
+        return CreatedAtAction(nameof(GetProduct), new { id = productDto.Id }, productDto);
+    }
+}
+
+// Example Service Interface
+public interface IProductService
+{
+    Task<IEnumerable<Product>> GetAllProductsAsync();
+    Task<Product> GetProductByIdAsync(int id);
+    Task<Product> CreateProductAsync(Product product);
+}
+
+// Example Service Implementation
+public class ProductService : IProductService
+{
+    private readonly ApplicationDbContext _context;
+    private readonly IMapper _mapper;
+    private readonly ILogger<ProductService> _logger;
+
+    public ProductService(
+        ApplicationDbContext context,
+        IMapper mapper,
+        ILogger<ProductService> logger)
+    {
+        _context = context;
+        _mapper = mapper;
+        _logger = logger;
+    }
+
+    public async Task<IEnumerable<Product>> GetAllProductsAsync()
+    {
+        return await _context.Products
+            .Include(p => p.Category)
+            .ToListAsync();
+    }
+
+    public async Task<Product> GetProductByIdAsync(int id)
+    {
+        return await _context.Products
+            .Include(p => p.Category)
+            .FirstOrDefaultAsync(p => p.Id == id);
+    }
+
+    public async Task<Product> CreateProductAsync(Product product)
+    {
+        _context.Products.Add(product);
+        await _context.SaveChangesAsync();
+        return product;
+    }
+}
+                </code></pre>
+                <div class="snippet-footer">
+                    <div class="snippet-meta">
+                        <span><i class="fas fa-download"></i> 2.8k downloads</span>
+                        <span><i class="fas fa-star"></i> 4.9</span>
+                    </div>
+                    <button class="copy-btn">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit Snippet -->
+    <section class="submit-snippet">
+        <div class="container">
+            <h2 class="section-title scroll-animate"><i class="fas fa-plus-circle"></i> Share Your Code</h2>
+            <p class="scroll-animate">Have a useful code snippet to share? Submit it to help other developers.</p>
+            <a href="../../pages/main/contact.html" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Submit Snippet
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="footer-text"><i class="far fa-copyright"></i> 2024 Sandip Acharya. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/sandipacharya" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/sandipacharya" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:sandip.acharya@example.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/code-snippets.js"></script>
+</body>
+
+</html>

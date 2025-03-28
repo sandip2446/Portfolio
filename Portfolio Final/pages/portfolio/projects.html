@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sandip Acharya | Computer Programming Student</title>
+    <meta name="description"
+        content="Explore my portfolio of programming projects showcasing my skills in various technologies.">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="../../index.html" class="nav-logo">
+                <i class="fas fa-code"></i> Sandip Acharya
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../pages/main/index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="../about/about.html" class="nav-link"><i class="fas fa-user"></i> About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../about/about.html"><i class="fas fa-user-circle"></i> About Me</a></li>
+                        <li><a href="../portfolio/resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+                        <li><a href="../portfolio/achievements.html"><i class="fas fa-trophy"></i> Achievements</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../portfolio/projects.html" class="nav-link"><i class="fas fa-project-diagram"></i>
+                        Portfolio</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../portfolio/projects.html"><i class="fas fa-code-branch"></i> Projects</a></li>
+                        <li><a href="../portfolio/case-studies.html"><i class="fas fa-book"></i> Case Studies</a></li>
+                        <li><a href="../portfolio/gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../content/blog.html" class="nav-link"><i class="fas fa-blog"></i> Content</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../content/blog.html"><i class="fas fa-newspaper"></i> Blog</a></li>
+                        <li><a href="../content/technical-blog.html"><i class="fas fa-code"></i> Technical Blog</a></li>
+                        <li><a href="../content/code-snippets.html"><i class="fas fa-code"></i> Code Snippets</a></li>
+                        <li><a href="../content/book-reviews.html"><i class="fas fa-book-reader"></i> Book Reviews</a>
+                        </li>
+                        <li><a href="../content/research.html"><i class="fas fa-microscope"></i> Research</a></li>
+                        <li><a href="../content/resources.html"><i class="fas fa-tools"></i> Resources</a></li>
+                        <li><a href="../content/tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../community/community.html" class="nav-link"><i class="fas fa-users"></i> Community</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../community/community.html"><i class="fas fa-users"></i> Community</a></li>
+                        <li><a href="../community/faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="../community/tech-stack.html"><i class="fas fa-layer-group"></i> Tech Stack</a>
+                        </li>
+                        <li><a href="../community/testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                        </li>
+                        <li><a href="../community/timeline.html"><i class="fas fa-history"></i> Timeline</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../speaking/speaking.html" class="nav-link"><i class="fas fa-microphone"></i> Speaking</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../speaking/speaking.html"><i class="fas fa-microphone"></i> Speaking</a></li>
+                        <li><a href="../speaking/speaking-schedule.html"><i class="fas fa-calendar-alt"></i>
+                                Schedule</a></li>
+                        <li><a href="../speaking/workshops.html"><i class="fas fa-chalkboard-teacher"></i> Workshops</a>
+                        </li>
+                        <li><a href="../speaking/media.html"><i class="fas fa-video"></i> Media</a></li>
+                        <li><a href="../speaking/publications.html"><i class="fas fa-book"></i> Publications</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contact/contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li class="dropdown">
+                    <a href="../legal/terms.html" class="nav-link"><i class="fas fa-gavel"></i> Legal</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../legal/terms.html"><i class="fas fa-file-contract"></i> Terms</a></li>
+                        <li><a href="../legal/privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+        <div class="container">
+            <h1 class="scroll-animate"><i class="fas fa-project-diagram"></i> My Programming Projects</h1>
+            <p class="scroll-animate">A collection of my work showcasing my journey in computer programming</p>
+        </div>
+    </section>
+
+    <!-- Project Filters -->
+    <section class="project-filters">
+        <div class="container">
+            <div class="filter-buttons scroll-animate">
+                <button class="filter-btn active" data-filter="all"><i class="fas fa-th-large"></i> All
+                    Projects</button>
+                <button class="filter-btn" data-filter="web"><i class="fas fa-globe"></i> Web Applications</button>
+                <button class="filter-btn" data-filter="api"><i class="fas fa-plug"></i> Web APIs</button>
+                <button class="filter-btn" data-filter="cloud"><i class="fas fa-cloud"></i> Cloud Solutions</button>
+                <button class="filter-btn" data-filter="enterprise"><i class="fas fa-building"></i> Enterprise
+                    Apps</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Applications -->
+    <section id="web" class="projects-section">
+        <div class="container">
+            <h2 class="section-title scroll-animate"><i class="fas fa-globe"></i> Web Applications</h2>
+            <div class="projects-grid">
+                <!-- E-Commerce Platform -->
+                <div class="project-card scroll-animate" data-category="web">
+                    <div class="project-image">
+                        <img src="../../images/projects/ecommerce-platform.jpg" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn primary" data-action="view-project"
+                                    data-project="ecommerce-platform"><i class="fas fa-eye"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3><i class="fas fa-shopping-cart"></i> E-Commerce Platform</h3>
+                        <p>A full-featured e-commerce solution built with ASP.NET Core MVC</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-dotnet"></i> ASP.NET Core MVC</span>
+                            <span><i class="fas fa-database"></i> Entity Framework Core</span>
+                            <span><i class="fas fa-database"></i> SQL Server</span>
+                            <span><i class="fab fa-bootstrap"></i> Bootstrap 5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- School Management System -->
+                <div class="project-card scroll-animate" data-category="web">
+                    <div class="project-image">
+                        <img src="../../images/projects/school-management.jpg" alt="School Management System">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn primary" data-action="view-project"
+                                    data-project="school-management"><i class="fas fa-eye"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3><i class="fas fa-graduation-cap"></i> School Management System</h3>
+                        <p>Complete school administration solution with ASP.NET Core MVC and Blazor</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-dotnet"></i> ASP.NET Core MVC</span>
+                            <span><i class="fas fa-code"></i> Blazor</span>
+                            <span><i class="fas fa-database"></i> Entity Framework Core</span>
+                            <span><i class="fas fa-broadcast-tower"></i> SignalR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web APIs -->
+    <section id="api" class="projects-section">
+        <div class="container">
+            <h2 class="section-title scroll-animate"><i class="fas fa-plug"></i> Web APIs</h2>
+            <div class="projects-grid">
+                <!-- Task Management API -->
+                <div class="project-card scroll-animate" data-category="api">
+                    <div class="project-image">
+                        <img src="../../images/projects/task-management.jpg" alt="Task Management API">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn primary" data-action="view-project"
+                                    data-project="task-management"><i class="fas fa-eye"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3><i class="fas fa-tasks"></i> Task Management API</h3>
+                        <p>RESTful Web API with JWT authentication and clean architecture</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-dotnet"></i> ASP.NET Core Web API</span>
+                            <span><i class="fas fa-key"></i> JWT</span>
+                            <span><i class="fas fa-database"></i> Entity Framework Core</span>
+                            <span><i class="fas fa-file-code"></i> Swagger</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banking API -->
+                <div class="project-card scroll-animate" data-category="api">
+                    <div class="project-image">
+                        <img src="../../images/projects/banking-api.jpg" alt="Banking API">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn primary" data-action="view-project" data-project="banking-api"><i
+                                        class="fas fa-eye"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3><i class="fas fa-university"></i> Banking API</h3>
+                        <p>Secure banking operations API with OAuth2 and microservices</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-dotnet"></i> ASP.NET Core Web API</span>
+                            <span><i class="fas fa-key"></i> OAuth2</span>
+                            <span><i class="fas fa-database"></i> PostgreSQL</span>
+                            <span><i class="fas fa-memory"></i> Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud Solutions -->
+    <section id="cloud" class="projects-section">
+        <div class="container">
+            <h2 class="section-title scroll-animate"><i class="fas fa-cloud"></i> Cloud Solutions</h2>
+            <div class="projects-grid">
+                <!-- Real Estate Portal -->
+                <div class="project-card scroll-animate" data-category="cloud">
+                    <div class="project-image">
+                        <img src="../../images/projects/real-estate.jpg" alt="Real Estate Portal">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn primary" data-action="view-project" data-project="real-estate"><i
+                                        class="fas fa-eye"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3><i class="fas fa-home"></i> Real Estate Portal</h3>
+                        <p>Azure-based property management system with advanced features</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-dotnet"></i> ASP.NET Core MVC</span>
+                            <span><i class="fab fa-azure"></i> Azure SQL</span>
+                            <span><i class="fas fa-cloud"></i> Azure Storage</span>
+                            <span><i class="fas fa-shield-alt"></i> Azure AD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Management System -->
+                <div class="project-card scroll-animate" data-category="cloud">
+                    <div class="project-image">
+                        <img src="../../images/projects/document-management.jpg" alt="Document Management System">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn primary" data-action="view-project"
+                                    data-project="document-management"><i class="fas fa-eye"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3><i class="fas fa-file-alt"></i> Document Management System</h3>
+                        <p>Secure document management with Azure integration</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-dotnet"></i> ASP.NET Core MVC</span>
+                            <span><i class="fab fa-azure"></i> Azure Blob Storage</span>
+                            <span><i class="fas fa-search"></i> Azure Search</span>
+                            <span><i class="fas fa-broadcast-tower"></i> SignalR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Analytics Platform -->
+                <div class="project-card scroll-animate" data-category="cloud">
+                    <div class="project-image">
+                        <img src="../../images/projects/analytics-platform.jpg" alt="Business Analytics Platform">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn primary" data-action="view-project"
+                                    data-project="analytics-platform"><i class="fas fa-eye"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3><i class="fas fa-chart-line"></i> Business Analytics Platform</h3>
+                        <p>Power BI integrated analytics platform</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-dotnet"></i> ASP.NET Core</span>
+                            <span><i class="fas fa-chart-bar"></i> Power BI</span>
+                            <span><i class="fab fa-azure"></i> Azure Synapse</span>
+                            <span><i class="fas fa-database"></i> Azure Data Factory</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inventory Management System -->
+                <div class="project-card scroll-animate" data-category="cloud">
+                    <div class="project-image">
+                        <img src="../../images/projects/inventory-management.jpg" alt="Enterprise Inventory Management">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn primary" data-action="view-project"
+                                    data-project="inventory-management"><i class="fas fa-eye"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3><i class="fas fa-boxes"></i> Enterprise Inventory Management</h3>
+                        <p>Real-time inventory tracking with Azure integration</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-dotnet"></i> ASP.NET Core MVC</span>
+                            <span><i class="fab fa-azure"></i> Azure SQL</span>
+                            <span><i class="fas fa-bolt"></i> Azure Functions</span>
+                            <span><i class="fas fa-chart-bar"></i> Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Applications -->
+    <section id="enterprise" class="projects-section">
+        <div class="container">
+            <h2 class="section-title scroll-animate"><i class="fas fa-building"></i> Enterprise Applications</h2>
+            <div class="projects-grid">
+                <!-- Healthcare Management System -->
+                <div class="project-card scroll-animate" data-category="enterprise">
+                    <div class="project-image">
+                        <img src="../../images/projects/healthcare.jpg" alt="Healthcare Management System">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn primary" data-action="view-project" data-project="healthcare"><i
+                                        class="fas fa-eye"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3><i class="fas fa-hospital"></i> Healthcare Management System</h3>
+                        <p>Comprehensive healthcare solution with real-time features</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-dotnet"></i> ASP.NET Core</span>
+                            <span><i class="fas fa-database"></i> Entity Framework Core</span>
+                            <span><i class="fas fa-database"></i> SQL Server</span>
+                            <span><i class="fas fa-broadcast-tower"></i> SignalR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HR Management System -->
+                <div class="project-card scroll-animate" data-category="enterprise">
+                    <div class="project-image">
+                        <img src="../../images/projects/hr-management.jpg" alt="HR Management System">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn primary" data-action="view-project"
+                                    data-project="hr-management"><i class="fas fa-eye"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3><i class="fas fa-users-cog"></i> HR Management System</h3>
+                        <p>Complete HR solution with employee management and analytics</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-dotnet"></i> ASP.NET Core</span>
+                            <span><i class="fas fa-code"></i> Blazor</span>
+                            <span><i class="fas fa-database"></i> Entity Framework Core</span>
+                            <span><i class="fas fa-shield-alt"></i> Azure AD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CRM System -->
+                <div class="project-card scroll-animate" data-category="enterprise">
+                    <div class="project-image">
+                        <img src="../../images/projects/crm-system.jpg" alt="Customer Relationship Management">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="btn primary" data-action="view-project" data-project="crm-system"><i
+                                        class="fas fa-eye"></i> View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3><i class="fas fa-handshake"></i> Customer Relationship Management</h3>
+                        <p>Modern CRM with lead tracking and analytics</p>
+                        <div class="project-tech">
+                            <span><i class="fab fa-dotnet"></i> ASP.NET Core Web API</span>
+                            <span><i class="fab fa-react"></i> React</span>
+                            <span><i class="fas fa-database"></i> MongoDB</span>
+                            <span><i class="fas fa-memory"></i> Redis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3><i class="fas fa-code"></i> Sandip Acharya</h3>
+                    <p>Computer Programming Student</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/sandipacharya" target="_blank" class="social-link"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/sandipacharya" target="_blank" class="social-link"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="mailto:sandip.acharya@example.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="copyright"><i class="far fa-copyright"></i> 2024 Sandip Acharya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <!-- Content will be dynamically inserted by JavaScript -->
+        </div>
+    </div>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/projects.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Blog - Sandip Acharya | Senior .NET Developer</title>
+    <meta name="description"
+        content="Deep dives into ASP.NET Core MVC, Web API, design patterns, and object-oriented programming.">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/technical-blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="../../pages/main/index.html" class="nav-logo">
+                <i class="fas fa-code"></i> Sandip Acharya
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../pages/main/index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="../about/about.html" class="nav-link"><i class="fas fa-user"></i> About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../about/about.html"><i class="fas fa-user-circle"></i> About Me</a></li>
+                        <li><a href="../portfolio/resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+                        <li><a href="../portfolio/achievements.html"><i class="fas fa-trophy"></i> Achievements</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../portfolio/projects.html" class="nav-link"><i class="fas fa-project-diagram"></i>
+                        Portfolio</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../portfolio/projects.html"><i class="fas fa-code-branch"></i> Projects</a></li>
+                        <li><a href="../portfolio/case-studies.html"><i class="fas fa-book"></i> Case Studies</a></li>
+                        <li><a href="../portfolio/gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="blog.html" class="nav-link"><i class="fas fa-blog"></i> Content</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog.html"><i class="fas fa-newspaper"></i> Blog</a></li>
+                        <li><a href="technical-blog.html" class="active"><i class="fas fa-code"></i> Technical Blog</a>
+                        </li>
+                        <li><a href="code-snippets.html"><i class="fas fa-code"></i> Code Snippets</a></li>
+                        <li><a href="book-reviews.html"><i class="fas fa-book-reader"></i> Book Reviews</a></li>
+                        <li><a href="research.html"><i class="fas fa-microscope"></i> Research</a></li>
+                        <li><a href="resources.html"><i class="fas fa-tools"></i> Resources</a></li>
+                        <li><a href="tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../community/community.html" class="nav-link"><i class="fas fa-users"></i> Community</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../community/community.html"><i class="fas fa-users"></i> Community</a></li>
+                        <li><a href="../community/faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="../community/tech-stack.html"><i class="fas fa-layer-group"></i> Tech Stack</a>
+                        </li>
+                        <li><a href="../community/testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                        </li>
+                        <li><a href="../community/timeline.html"><i class="fas fa-history"></i> Timeline</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../speaking/speaking.html" class="nav-link"><i class="fas fa-microphone"></i> Speaking</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../speaking/speaking.html"><i class="fas fa-microphone"></i> Speaking</a></li>
+                        <li><a href="../speaking/speaking-schedule.html"><i class="fas fa-calendar-alt"></i>
+                                Schedule</a></li>
+                        <li><a href="../speaking/workshops.html"><i class="fas fa-chalkboard-teacher"></i> Workshops</a>
+                        </li>
+                        <li><a href="../speaking/media.html"><i class="fas fa-video"></i> Media</a></li>
+                        <li><a href="../speaking/publications.html"><i class="fas fa-book"></i> Publications</a></li>
+                    </ul>
+                </li>
+                <li><a href="../main/contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li class="dropdown">
+                    <a href="../legal/terms.html" class="nav-link"><i class="fas fa-gavel"></i> Legal</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../legal/terms.html"><i class="fas fa-file-contract"></i> Terms</a></li>
+                        <li><a href="../legal/privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Technical Blog Hero -->
+    <section class="tech-blog-hero">
+        <div class="container">
+            <h1 class="scroll-animate"><i class="fas fa-code"></i> Technical Blog</h1>
+            <p class="scroll-animate">Deep dives into ASP.NET Core MVC, Web API, design patterns, and OOP</p>
+        </div>
+    </section>
+
+    <!-- Technical Blog Grid -->
+    <section class="tech-blog-section">
+        <div class="container">
+            <div class="tech-blog-grid">
+                <div class="tech-blog-main">
+                    <!-- Article 1 -->
+                    <article class="tech-blog-post scroll-animate">
+                        <div class="post-header">
+                            <div class="post-category"><i class="fas fa-sitemap"></i> ASP.NET Core MVC</div>
+                            <h2>Building Scalable Web Applications with ASP.NET Core MVC</h2>
+                            <div class="post-meta">
+                                <span><i class="fas fa-calendar"></i> March 15, 2024</span>
+                                <span><i class="fas fa-clock"></i> 15 min read</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Learn how to build scalable and maintainable web applications using ASP.NET Core MVC,
+                                including best practices for routing, controllers, and views.</p>
+                            <div class="code-block">
+                                <pre><code>public class ProductController : Controller
+{
+    private readonly IProductService _productService;
+
+    public ProductController(IProductService productService)
+    {
+        _productService = productService;
+    }
+
+    public async Task<IActionResult> Index()
+    {
+        var products = await _productService.GetAllProductsAsync();
+        return View(products);
+    }
+}</code></pre>
+                            </div>
+                            <a href="#" class="read-more" data-action="view-post" data-post="aspnet-mvc">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="tech-blog-post scroll-animate">
+                        <div class="post-header">
+                            <div class="post-category"><i class="fas fa-plug"></i> Web API</div>
+                            <h2>RESTful API Design with ASP.NET Core Web API</h2>
+                            <div class="post-meta">
+                                <span><i class="fas fa-calendar"></i> March 10, 2024</span>
+                                <span><i class="fas fa-clock"></i> 12 min read</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Master the art of designing and implementing RESTful APIs using ASP.NET Core Web API,
+                                including versioning, documentation, and security.</p>
+                            <div class="code-block">
+                                <pre><code>[ApiController]
+[Route("api/[controller]")]
+public class ProductsController : ControllerBase
+{
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+    {
+        var products = await _productService.GetAllProductsAsync();
+        return Ok(products);
+    }
+}</code></pre>
+                            </div>
+                            <a href="#" class="read-more" data-action="view-post" data-post="web-api">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="tech-blog-post scroll-animate">
+                        <div class="post-header">
+                            <div class="post-category"><i class="fas fa-cogs"></i> Design Patterns</div>
+                            <h2>Essential Design Patterns in .NET Development</h2>
+                            <div class="post-meta">
+                                <span><i class="fas fa-calendar"></i> March 5, 2024</span>
+                                <span><i class="fas fa-clock"></i> 10 min read</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Explore common design patterns and their implementation in .NET applications, from
+                                creational to behavioral patterns.</p>
+                            <div class="code-block">
+                                <pre><code>public class Singleton
+{
+    private static Singleton _instance;
+    private static readonly object _lock = new object();
+
+    public static Singleton Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                lock (_lock)
+                {
+                    _instance ??= new Singleton();
+                }
+            }
+            return _instance;
+        }
+    }
+}</code></pre>
+                            </div>
+                            <a href="#" class="read-more" data-action="view-post" data-post="design-patterns">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="tech-blog-post scroll-animate">
+                        <div class="post-header">
+                            <div class="post-category"><i class="fas fa-cube"></i> OOP</div>
+                            <h2>Object-Oriented Programming Principles in C#</h2>
+                            <div class="post-meta">
+                                <span><i class="fas fa-calendar"></i> March 1, 2024</span>
+                                <span><i class="fas fa-clock"></i> 14 min read</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Deep dive into SOLID principles and object-oriented programming concepts in C#, with
+                                practical examples.</p>
+                            <div class="code-block">
+                                <pre><code>public abstract class Shape
+{
+    public abstract double CalculateArea();
+}
+
+public class Circle : Shape
+{
+    private readonly double _radius;
+    
+    public Circle(double radius)
+    {
+        _radius = radius;
+    }
+
+    public override double CalculateArea()
+    {
+        return Math.PI * _radius * _radius;
+    }
+}</code></pre>
+                            </div>
+                            <a href="#" class="read-more" data-action="view-post" data-post="oop">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="tech-blog-post scroll-animate">
+                        <div class="post-header">
+                            <div class="post-category"><i class="fas fa-database"></i> Entity Framework</div>
+                            <h2>Entity Framework Core Best Practices</h2>
+                            <div class="post-meta">
+                                <span><i class="fas fa-calendar"></i> February 25, 2024</span>
+                                <span><i class="fas fa-clock"></i> 13 min read</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Learn how to optimize your database operations using Entity Framework Core, including
+                                performance tips and common pitfalls.</p>
+                            <div class="code-block">
+                                <pre><code>public class ApplicationDbContext : DbContext
+{
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        : base(options)
+    {
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Product>()
+            .HasIndex(p => p.Name)
+            .IsUnique();
+    }
+}</code></pre>
+                            </div>
+                            <a href="#" class="read-more" data-action="view-post" data-post="entity-framework">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="tech-blog-post scroll-animate">
+                        <div class="post-header">
+                            <div class="post-category"><i class="fas fa-shield-alt"></i> Security</div>
+                            <h2>Securing ASP.NET Core Applications</h2>
+                            <div class="post-meta">
+                                <span><i class="fas fa-calendar"></i> February 20, 2024</span>
+                                <span><i class="fas fa-clock"></i> 11 min read</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Comprehensive guide to implementing security best practices in ASP.NET Core applications,
+                                from authentication to authorization.</p>
+                            <div class="code-block">
+                                <pre><code>services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true
+        };
+    });</code></pre>
+                            </div>
+                            <a href="#" class="read-more" data-action="view-post" data-post="security">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="tech-blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3><i class="fas fa-folder"></i> Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#"><i class="fas fa-sitemap"></i> ASP.NET Core MVC <span>(2)</span></a></li>
+                            <li><a href="#"><i class="fas fa-plug"></i> Web API <span>(1)</span></a></li>
+                            <li><a href="#"><i class="fas fa-cogs"></i> Design Patterns <span>(1)</span></a></li>
+                            <li><a href="#"><i class="fas fa-cube"></i> OOP <span>(1)</span></a></li>
+                            <li><a href="#"><i class="fas fa-database"></i> Entity Framework <span>(1)</span></a></li>
+                            <li><a href="#"><i class="fas fa-shield-alt"></i> Security <span>(1)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3><i class="fas fa-fire"></i> Popular Posts</h3>
+                        <div class="popular-posts">
+                            <a href="#" class="popular-post-item" data-action="view-post" data-post="aspnet-mvc">
+                                <img src="../../images/blog/aspnet-mvc.jpg" alt="ASP.NET Core MVC">
+                                <div class="post-info">
+                                    <h4>Building Scalable Web Applications</h4>
+                                    <span>March 15, 2024</span>
+                                </div>
+                            </a>
+                            <a href="#" class="popular-post-item" data-action="view-post" data-post="web-api">
+                                <img src="../../images/blog/web-api.jpg" alt="Web API Design">
+                                <div class="post-info">
+                                    <h4>RESTful API Design</h4>
+                                    <span>March 10, 2024</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3><i class="fas fa-envelope"></i> Newsletter</h3>
+                        <p>Subscribe to get the latest technical articles delivered to your inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn primary">
+                                <i class="fas fa-paper-plane"></i> Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Blog Modal -->
+    <div id="tech-blog-modal" class="modal">
+        <div class="modal-content">
+            <!-- Content will be dynamically inserted by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3><i class="fas fa-code"></i> Sandip Acharya</h3>
+                    <p>Senior .NET Developer</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/sandipacharya" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sandipacharya" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:sandip.acharya@example.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="copyright"><i class="far fa-copyright"></i> 2024 Sandip Acharya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/technical-blog.js"></script>
+</body>
+
+</html>

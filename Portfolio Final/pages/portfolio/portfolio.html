@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Showcase - .NET Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">YourName</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <div class="dropdown">
+                <a href="services.html" class="dropdown-trigger">Services <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="services.html#web-development">Web Development</a>
+                    <a href="services.html#api-development">API Development</a>
+                    <a href="services.html#consulting">Consulting</a>
+                </div>
+            </div>
+            <a href="projects.html">Projects</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="blog.html">Blog</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="resume.html">Resume</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="portfolio-hero">
+            <div class="portfolio-content">
+                <h1 class="animate-text">Portfolio Showcase</h1>
+                <p class="animate-text">A collection of my best projects and technical achievements</p>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="api">APIs</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="cloud">Cloud</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item scroll-animate" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio1.jpg" alt="E-Commerce Platform">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="btn primary"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn primary"><i class="fab fa-github"></i></a>
+                                <a href="#" class="btn primary"><i class="fas fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack .NET application with microservices architecture</p>
+                        <div class="portfolio-tech">
+                            <span>ASP.NET Core</span>
+                            <span>React</span>
+                            <span>Docker</span>
+                            <span>Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item scroll-animate" data-category="api">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio2.jpg" alt="Task Management API">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="btn primary"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn primary"><i class="fab fa-github"></i></a>
+                                <a href="#" class="btn primary"><i class="fas fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Task Management API</h3>
+                        <p>RESTful API with JWT authentication and real-time updates</p>
+                        <div class="portfolio-tech">
+                            <span>Web API</span>
+                            <span>SignalR</span>
+                            <span>SQL Server</span>
+                            <span>JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item scroll-animate" data-category="cloud">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio3.jpg" alt="Cloud Migration Project">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="btn primary"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn primary"><i class="fab fa-github"></i></a>
+                                <a href="#" class="btn primary"><i class="fas fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Cloud Migration Project</h3>
+                        <p>Legacy application migration to Azure cloud infrastructure</p>
+                        <div class="portfolio-tech">
+                            <span>Azure</span>
+                            <span>DevOps</span>
+                            <span>CI/CD</span>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item scroll-animate" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio4.jpg" alt="Mobile Banking App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#" class="btn primary"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="btn primary"><i class="fab fa-github"></i></a>
+                                <a href="#" class="btn primary"><i class="fas fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Mobile Banking App</h3>
+                        <p>Cross-platform mobile application with .NET MAUI</p>
+                        <div class="portfolio-tech">
+                            <span>.NET MAUI</span>
+                            <span>XAML</span>
+                            <span>MVVM</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-details">
+            <div class="portfolio-modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div class="modal-body">
+                        <div class="modal-image">
+                            <img src="" alt="Project Image">
+                        </div>
+                        <div class="modal-info">
+                            <h2></h2>
+                            <div class="modal-tech"></div>
+                            <div class="modal-description"></div>
+                            <div class="modal-features">
+                                <h3>Key Features</h3>
+                                <ul></ul>
+                            </div>
+                            <div class="modal-links">
+                                <a href="#" class="btn primary" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="#" class="btn secondary" target="_blank">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+
+</html>

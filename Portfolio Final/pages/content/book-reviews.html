@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews - Sandip Acharya | Senior .NET Developer</title>
+    <meta name="description" content="Technical book reviews and recommendations by Sandip Acharya.">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/book-reviews.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="../../pages/main/index.html" class="nav-logo">
+                <i class="fas fa-code"></i> Sandip Acharya
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../pages/main/index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="../about/about.html" class="nav-link"><i class="fas fa-user"></i> About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../about/about.html"><i class="fas fa-user-circle"></i> About Me</a></li>
+                        <li><a href="../portfolio/resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+                        <li><a href="../portfolio/achievements.html"><i class="fas fa-trophy"></i> Achievements</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../portfolio/projects.html" class="nav-link"><i class="fas fa-project-diagram"></i>
+                        Portfolio</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../portfolio/projects.html"><i class="fas fa-code-branch"></i> Projects</a></li>
+                        <li><a href="../portfolio/case-studies.html"><i class="fas fa-book"></i> Case Studies</a></li>
+                        <li><a href="../portfolio/gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="blog.html" class="nav-link"><i class="fas fa-blog"></i> Content</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog.html"><i class="fas fa-newspaper"></i> Blog</a></li>
+                        <li><a href="technical-blog.html"><i class="fas fa-code"></i> Technical Blog</a></li>
+                        <li><a href="code-snippets.html"><i class="fas fa-code"></i> Code Snippets</a></li>
+                        <li><a href="book-reviews.html" class="active"><i class="fas fa-book-reader"></i> Book
+                                Reviews</a>
+                        </li>
+                        <li><a href="research.html"><i class="fas fa-microscope"></i> Research</a></li>
+                        <li><a href="resources.html"><i class="fas fa-tools"></i> Resources</a></li>
+                        <li><a href="tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../community/community.html" class="nav-link"><i class="fas fa-users"></i> Community</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../community/community.html"><i class="fas fa-users"></i> Community</a></li>
+                        <li><a href="../community/faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="../community/tech-stack.html"><i class="fas fa-layer-group"></i> Tech Stack</a>
+                        </li>
+                        <li><a href="../community/testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                        </li>
+                        <li><a href="../community/timeline.html"><i class="fas fa-history"></i> Timeline</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../speaking/speaking.html" class="nav-link"><i class="fas fa-microphone"></i> Speaking</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../speaking/speaking.html"><i class="fas fa-microphone"></i> Speaking</a></li>
+                        <li><a href="../speaking/speaking-schedule.html"><i class="fas fa-calendar-alt"></i>
+                                Schedule</a></li>
+                        <li><a href="../speaking/workshops.html"><i class="fas fa-chalkboard-teacher"></i> Workshops</a>
+                        </li>
+                        <li><a href="../speaking/media.html"><i class="fas fa-video"></i> Media</a></li>
+                        <li><a href="../speaking/publications.html"><i class="fas fa-book"></i> Publications</a></li>
+                    </ul>
+                </li>
+                <li><a href="../main/contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li class="dropdown">
+                    <a href="../legal/terms.html" class="nav-link"><i class="fas fa-gavel"></i> Legal</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../legal/terms.html"><i class="fas fa-file-contract"></i> Terms</a></li>
+                        <li><a href="../legal/privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Book Reviews Hero -->
+    <section class="reviews-hero">
+        <div class="container">
+            <h1 class="scroll-animate"><i class="fas fa-book-reader"></i> Book Reviews</h1>
+            <p class="typing-text scroll-animate"
+                data-texts="Technical Book Reviews,Software Development Books,Programming Best Practices,Architecture Patterns">
+            </p>
+            <p class="scroll-animate">My thoughts on technical books and learning resources</p>
+        </div>
+    </section>
+
+    <!-- Featured Reviews -->
+    <section class="featured-reviews">
+        <div class="container">
+            <h2 class="section-title scroll-animate"><i class="fas fa-star"></i> Featured Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card scroll-animate">
+                    <div class="book-cover">
+                        <img src="../../images/books/clean-code.jpg" alt="Clean Code">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h3><i class="fas fa-book"></i> Clean Code</h3>
+                        <p class="author">by Robert C. Martin</p>
+                        <p class="review-excerpt">A timeless classic that every developer should read. The principles of
+                            clean code are essential for writing maintainable software.</p>
+                        <div class="review-meta">
+                            <span><i class="fas fa-calendar"></i> Reviewed: March 2024</span>
+                            <span><i class="fas fa-book"></i> 464 pages</span>
+                        </div>
+                        <a href="#" class="btn primary" data-action="view-review" data-book="clean-code">
+                            <i class="fas fa-book-reader"></i> Read Full Review
+                        </a>
+                    </div>
+                </div>
+
+                <div class="review-card scroll-animate">
+                    <div class="book-cover">
+                        <img src="../../images/books/design-patterns.jpg" alt="Design Patterns">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h3><i class="fas fa-book"></i> Design Patterns</h3>
+                        <p class="author">by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</p>
+                        <p class="review-excerpt">The Gang of Four's seminal work on software design patterns. A
+                            must-read for understanding object-oriented design principles.</p>
+                        <div class="review-meta">
+                            <span><i class="fas fa-calendar"></i> Reviewed: February 2024</span>
+                            <span><i class="fas fa-book"></i> 416 pages</span>
+                        </div>
+                        <a href="#" class="btn primary" data-action="view-review" data-book="design-patterns">
+                            <i class="fas fa-book-reader"></i> Read Full Review
+                        </a>
+                    </div>
+                </div>
+
+                <div class="review-card scroll-animate">
+                    <div class="book-cover">
+                        <img src="../../images/books/clean-architecture.jpg" alt="Clean Architecture">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h3><i class="fas fa-book"></i> Clean Architecture</h3>
+                        <p class="author">by Robert C. Martin</p>
+                        <p class="review-excerpt">An excellent guide to software architecture principles. The SOLID
+                            principles are explained in detail with practical examples.</p>
+                        <div class="review-meta">
+                            <span><i class="fas fa-calendar"></i> Reviewed: January 2024</span>
+                            <span><i class="fas fa-book"></i> 432 pages</span>
+                        </div>
+                        <a href="#" class="btn primary" data-action="view-review" data-book="clean-architecture">
+                            <i class="fas fa-book-reader"></i> Read Full Review
+                        </a>
+                    </div>
+                </div>
+
+                <div class="review-card scroll-animate">
+                    <div class="book-cover">
+                        <img src="../../images/books/pragmatic-programmer.jpg" alt="The Pragmatic Programmer">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h3><i class="fas fa-book"></i> The Pragmatic Programmer</h3>
+                        <p class="author">by Andrew Hunt and David Thomas</p>
+                        <p class="review-excerpt">A comprehensive guide that goes beyond coding to cover the entire
+                            software development process. Essential reading for any serious developer.</p>
+                        <div class="review-meta">
+                            <span><i class="fas fa-calendar"></i> Reviewed: December 2023</span>
+                            <span><i class="fas fa-book"></i> 352 pages</span>
+                        </div>
+                        <a href="#" class="btn primary" data-action="view-review" data-book="pragmatic-programmer">
+                            <i class="fas fa-book-reader"></i> Read Full Review
+                        </a>
+                    </div>
+                </div>
+
+                <div class="review-card scroll-animate">
+                    <div class="book-cover">
+                        <img src="../../images/books/refactoring.jpg" alt="Refactoring">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h3><i class="fas fa-book"></i> Refactoring</h3>
+                        <p class="author">by Martin Fowler</p>
+                        <p class="review-excerpt">A comprehensive guide to improving code quality through systematic
+                            refactoring techniques. Learn how to make your code more maintainable.</p>
+                        <div class="review-meta">
+                            <span><i class="fas fa-calendar"></i> Reviewed: November 2023</span>
+                            <span><i class="fas fa-book"></i> 448 pages</span>
+                        </div>
+                        <a href="#" class="btn primary" data-action="view-review" data-book="refactoring">
+                            <i class="fas fa-book-reader"></i> Read Full Review
+                        </a>
+                    </div>
+                </div>
+
+                <div class="review-card scroll-animate">
+                    <div class="book-cover">
+                        <img src="../../images/books/domain-driven-design.jpg" alt="Domain-Driven Design">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <h3><i class="fas fa-book"></i> Domain-Driven Design</h3>
+                        <p class="author">by Eric Evans</p>
+                        <p class="review-excerpt">A comprehensive approach to software development that focuses on
+                            creating a shared understanding between technical and domain experts.</p>
+                        <div class="review-meta">
+                            <span><i class="fas fa-calendar"></i> Reviewed: October 2023</span>
+                            <span><i class="fas fa-book"></i> 560 pages</span>
+                        </div>
+                        <a href="#" class="btn primary" data-action="view-review" data-book="domain-driven-design">
+                            <i class="fas fa-book-reader"></i> Read Full Review
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reading List -->
+    <section class="reading-list">
+        <div class="container">
+            <h2 class="section-title scroll-animate"><i class="fas fa-bookmark"></i> Current Reading List</h2>
+            <div class="reading-grid">
+                <div class="reading-item scroll-animate">
+                    <div class="book-status">
+                        <span class="status in-progress"><i class="fas fa-spinner"></i> In Progress</span>
+                    </div>
+                    <div class="book-info">
+                        <h3><i class="fas fa-book"></i> Building Microservices</h3>
+                        <p class="author">by Sam Newman</p>
+                        <p class="progress">Progress: 60%</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reading-item scroll-animate">
+                    <div class="book-status">
+                        <span class="status planned"><i class="fas fa-clock"></i> Planned</span>
+                    </div>
+                    <div class="book-info">
+                        <h3><i class="fas fa-book"></i> Domain-Driven Design</h3>
+                        <p class="author">by Eric Evans</p>
+                        <p class="progress">Not Started</p>
+                    </div>
+                </div>
+
+                <div class="reading-item scroll-animate">
+                    <div class="book-status">
+                        <span class="status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                    </div>
+                    <div class="book-info">
+                        <h3><i class="fas fa-book"></i> Refactoring</h3>
+                        <p class="author">by Martin Fowler</p>
+                        <p class="progress">Completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content scroll-animate">
+                <h2><i class="fas fa-envelope"></i> Stay Updated with New Reviews</h2>
+                <p>Subscribe to receive notifications about new book reviews and recommendations.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn primary">
+                        <i class="fas fa-paper-plane"></i> Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Review Modal -->
+    <div id="book-review-modal" class="modal">
+        <div class="modal-content">
+            <!-- Content will be dynamically inserted by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3><i class="fas fa-code"></i> Sandip Acharya</h3>
+                    <p>Senior .NET Developer</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/sandipacharya" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/sandipacharya" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:sandip.acharya@example.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p class="copyright"><i class="far fa-copyright"></i> 2024 Sandip Acharya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/book-reviews.js"></script>
+</body>
+
+</html>

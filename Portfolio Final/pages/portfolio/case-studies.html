@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - Sandip Acharya | Senior .NET Developer</title>
+    <meta name="description"
+        content="Explore detailed case studies of successful .NET development projects, including architecture decisions, challenges, and solutions.">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/case-studies.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="../../index.html" class="nav-logo">
+                <i class="fas fa-code"></i> Sandip Acharya
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../../pages/main/index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="../about/about.html" class="nav-link"><i class="fas fa-user"></i> About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../about/about.html"><i class="fas fa-user-circle"></i> About Me</a></li>
+                        <li><a href="../portfolio/resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+                        <li><a href="../portfolio/achievements.html"><i class="fas fa-trophy"></i> Achievements</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../portfolio/projects.html" class="nav-link"><i class="fas fa-project-diagram"></i>
+                        Portfolio</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../portfolio/projects.html"><i class="fas fa-code-branch"></i> Projects</a></li>
+                        <li><a href="../portfolio/case-studies.html"><i class="fas fa-book"></i> Case Studies</a></li>
+                        <li><a href="../portfolio/gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../content/blog.html" class="nav-link"><i class="fas fa-blog"></i> Content</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../content/blog.html"><i class="fas fa-newspaper"></i> Blog</a></li>
+                        <li><a href="../content/technical-blog.html"><i class="fas fa-code"></i> Technical Blog</a></li>
+                        <li><a href="../content/code-snippets.html"><i class="fas fa-code"></i> Code Snippets</a></li>
+                        <li><a href="../content/book-reviews.html"><i class="fas fa-book-reader"></i> Book Reviews</a>
+                        </li>
+                        <li><a href="../content/research.html"><i class="fas fa-microscope"></i> Research</a></li>
+                        <li><a href="../content/resources.html"><i class="fas fa-tools"></i> Resources</a></li>
+                        <li><a href="../content/tools.html"><i class="fas fa-wrench"></i> Tools</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../community/community.html" class="nav-link"><i class="fas fa-users"></i> Community</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../community/community.html"><i class="fas fa-users"></i> Community</a></li>
+                        <li><a href="../community/faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="../community/tech-stack.html"><i class="fas fa-layer-group"></i> Tech Stack</a>
+                        </li>
+                        <li><a href="../community/testimonials.html"><i class="fas fa-comments"></i> Testimonials</a>
+                        </li>
+                        <li><a href="../community/timeline.html"><i class="fas fa-history"></i> Timeline</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../speaking/speaking.html" class="nav-link"><i class="fas fa-microphone"></i> Speaking</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../speaking/speaking.html"><i class="fas fa-microphone"></i> Speaking</a></li>
+                        <li><a href="../speaking/speaking-schedule.html"><i class="fas fa-calendar-alt"></i>
+                                Schedule</a></li>
+                        <li><a href="../speaking/workshops.html"><i class="fas fa-chalkboard-teacher"></i> Workshops</a>
+                        </li>
+                        <li><a href="../speaking/media.html"><i class="fas fa-video"></i> Media</a></li>
+                        <li><a href="../speaking/publications.html"><i class="fas fa-book"></i> Publications</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contact/contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li class="dropdown">
+                    <a href="../legal/terms.html" class="nav-link"><i class="fas fa-gavel"></i> Legal</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../legal/terms.html"><i class="fas fa-file-contract"></i> Terms</a></li>
+                        <li><a href="../legal/privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Case Studies Hero -->
+    <section class="case-studies-hero">
+        <div class="container">
+            <h1 class="scroll-animate"><i class="fas fa-book"></i> Case Studies</h1>
+            <p class="scroll-animate">Detailed analysis of successful project implementations and technical challenges
+            </p>
+        </div>
+    </section>
+
+    <!-- Case Studies Grid -->
+    <section class="case-studies-grid">
+        <div class="container">
+            <div class="case-study-card scroll-animate">
+                <div class="case-study-image">
+                    <img src="../../images/case-studies/ecommerce-transformation.jpg"
+                        alt="E-Commerce Platform Transformation">
+                    <div class="case-study-overlay">
+                        <div class="case-study-category"><i class="fas fa-shopping-cart"></i> Web Development</div>
+                    </div>
+                </div>
+                <div class="case-study-content">
+                    <h2><i class="fas fa-shopping-cart"></i> E-Commerce Platform Transformation</h2>
+                    <p class="case-study-excerpt">A comprehensive transformation of a legacy e-commerce platform to a
+                        modern, scalable solution.</p>
+                    <div class="case-study-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>3 months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>3 team members</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>ASP.NET Core MVC</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn primary" data-action="view-case-study"
+                        data-case-study="ecommerce-transformation"><i class="fas fa-book-reader"></i> Read Case
+                        Study</a>
+                </div>
+            </div>
+
+            <div class="case-study-card scroll-animate">
+                <div class="case-study-image">
+                    <img src="../../images/case-studies/cloud-migration.jpg" alt="Cloud Migration Success">
+                    <div class="case-study-overlay">
+                        <div class="case-study-category"><i class="fas fa-cloud"></i> Cloud Solutions</div>
+                    </div>
+                </div>
+                <div class="case-study-content">
+                    <h2><i class="fas fa-cloud"></i> Cloud Migration Success Story</h2>
+                    <p class="case-study-excerpt">Successful migration of a monolithic application to Azure cloud with
+                        microservices architecture.</p>
+                    <div class="case-study-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>4 months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>4 team members</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Azure</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn primary" data-action="view-case-study" data-case-study="cloud-migration"><i
+                            class="fas fa-book-reader"></i> Read Case Study</a>
+                </div>
+            </div>
+
+            <div class="case-study-card scroll-animate">
+                <div class="case-study-image">
+                    <img src="../../images/case-studies/mobile-app.jpg" alt="Mobile App Development">
+                    <div class="case-study-overlay">
+                        <div class="case-study-category"><i class="fas fa-mobile-alt"></i> Mobile Development</div>
+                    </div>
+                </div>
+                <div class="case-study-content">
+                    <h2><i class="fas fa-mobile-alt"></i> Cross-Platform Mobile App Development</h2>
+                    <p class="case-study-excerpt">Development of a cross-platform mobile app using .NET MAUI for a
+                        leading retail client.</p>
+                    <div class="case-study-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>3 months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>2 team members</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>.NET MAUI</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn primary" data-action="view-case-study" data-case-study="mobile-app"><i
+                            class="fas fa-book-reader"></i> Read Case Study</a>
+                </div>
+            </div>
+
+            <div class="case-study-card scroll-animate">
+                <div class="case-study-image">
+                    <img src="../../images/case-studies/task-management.jpg" alt="Task Management System">
+                    <div class="case-study-overlay">
+                        <div class="case-study-category"><i class="fas fa-tasks"></i> Web Development</div>
+                    </div>
+                </div>
+                <div class="case-study-content">
+                    <h2><i class="fas fa-tasks"></i> Task Management System</h2>
+                    <p class="case-study-excerpt">A RESTful task management system built with ASP.NET Core Web API and
+                        modern design principles.</p>
+                    <div class="case-study-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>2 months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>2 team members</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <span>ASP.NET Core Web API</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn primary" data-action="view-case-study" data-case-study="task-management"><i
+                            class="fas fa-book-reader"></i> Read Case Study</a>
+                </div>
+            </div>
+
+            <div class="case-study-card scroll-animate">
+                <div class="case-study-image">
+                    <img src="../../images/case-studies/weather-app.jpg" alt="Weather Forecast Application">
+                    <div class="case-study-overlay">
+                        <div class="case-study-category"><i class="fas fa-cloud-sun"></i> Mobile Development</div>
+                    </div>
+                </div>
+                <div class="case-study-content">
+                    <h2><i class="fas fa-cloud-sun"></i> Weather Forecast Application</h2>
+                    <p class="case-study-excerpt">A cross-platform weather app with real-time data and location services
+                        using .NET MAUI.</p>
+                    <div class="case-study-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>2 months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>1 team member</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>.NET MAUI</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn primary" data-action="view-case-study" data-case-study="weather-app"><i
+                            class="fas fa-book-reader"></i> Read Case Study</a>
+                </div>
+            </div>
+
+            <div class="case-study-card scroll-animate">
+                <div class="case-study-image">
+                    <img src="../../images/case-studies/blog-platform.jpg" alt="Personal Blog Platform">
+                    <div class="case-study-overlay">
+                        <div class="case-study-category"><i class="fas fa-blog"></i> Web Development</div>
+                    </div>
+                </div>
+                <div class="case-study-content">
+                    <h2><i class="fas fa-blog"></i> Personal Blog Platform</h2>
+                    <p class="case-study-excerpt">A full-featured blogging system with modern design and content
+                        management capabilities.</p>
+                    <div class="case-study-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>3 months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-users"></i>
+                            <span>1 team member</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <span>ASP.NET Core MVC</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn primary" data-action="view-case-study" data-case-study="blog-platform"><i
+                            class="fas fa-book-reader"></i> Read Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Modal -->
+    <div id="case-study-modal" class="modal">
+        <div class="modal-content">
+            <!-- Content will be dynamically inserted by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3><i class="fas fa-code"></i> Sandip Acharya</h3>
+                    <p>Senior .NET Developer</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/sandipacharya" target="_blank" class="social-link"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/sandipacharya" target="_blank" class="social-link"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="mailto:sandip.acharya@example.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="copyright"><i class="far fa-copyright"></i> 2024 Sandip Acharya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/case-studies.js"></script>
+</body>
+
+</html>

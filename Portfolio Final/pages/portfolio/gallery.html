@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Sandip Acharya | Senior .NET Developer</title>
+    <meta name="description"
+        content="Visual gallery of projects, events, and achievements showcasing my work as a Senior .NET Developer.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Sandip Acharya</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <div class="dropdown">
+                <a href="services.html" class="dropdown-trigger">Services <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="services.html#web-development">Web Development</a>
+                    <a href="services.html#api-development">API Development</a>
+                    <a href="services.html#consulting">Technical Consulting</a>
+                </div>
+            </div>
+            <a href="projects.html">Projects</a>
+            <a href="case-studies.html">Case Studies</a>
+            <a href="blog.html">Blog</a>
+            <a href="speaking.html">Speaking</a>
+            <a href="workshops.html">Workshops</a>
+            <a href="code-snippets.html">Code Snippets</a>
+            <a href="tools.html">Tools</a>
+            <a href="community.html">Community</a>
+            <a href="publications.html">Publications</a>
+            <a href="media.html">Media</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="resume.html">Resume</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero -->
+    <section class="gallery-hero">
+        <div class="container">
+            <h1 class="scroll-animate">Gallery</h1>
+            <p class="scroll-animate">Visual highlights of projects, events, and achievements</p>
+        </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="gallery-categories">
+        <div class="container">
+            <div class="categories-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="projects">Projects</button>
+                <button class="filter-btn" data-category="events">Events</button>
+                <button class="filter-btn" data-category="awards">Awards</button>
+                <button class="filter-btn" data-category="conferences">Conferences</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid">
+        <div class="container">
+            <!-- Project Screenshots -->
+            <div class="gallery-item scroll-animate" data-category="projects">
+                <div class="gallery-image">
+                    <img src="images/gallery/project1.jpg" alt="E-commerce Platform">
+                    <div class="gallery-overlay">
+                        <h3>E-commerce Platform</h3>
+                        <p>Modern web application with responsive design</p>
+                        <a href="#" class="btn primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item scroll-animate" data-category="projects">
+                <div class="gallery-image">
+                    <img src="images/gallery/project2.jpg" alt="Mobile Banking App">
+                    <div class="gallery-overlay">
+                        <h3>Mobile Banking App</h3>
+                        <p>Cross-platform mobile application</p>
+                        <a href="#" class="btn primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Photos -->
+            <div class="gallery-item scroll-animate" data-category="events">
+                <div class="gallery-image">
+                    <img src="images/gallery/event1.jpg" alt="Tech Workshop">
+                    <div class="gallery-overlay">
+                        <h3>Tech Workshop</h3>
+                        <p>Hands-on development workshop</p>
+                        <a href="#" class="btn primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item scroll-animate" data-category="events">
+                <div class="gallery-image">
+                    <img src="images/gallery/event2.jpg" alt="User Group Meeting">
+                    <div class="gallery-overlay">
+                        <h3>User Group Meeting</h3>
+                        <p>Monthly .NET user group gathering</p>
+                        <a href="#" class="btn primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Award Ceremonies -->
+            <div class="gallery-item scroll-animate" data-category="awards">
+                <div class="gallery-image">
+                    <img src="images/gallery/award1.jpg" alt="MVP Award">
+                    <div class="gallery-overlay">
+                        <h3>MVP Award</h3>
+                        <p>Microsoft MVP recognition ceremony</p>
+                        <a href="#" class="btn primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item scroll-animate" data-category="awards">
+                <div class="gallery-image">
+                    <img src="images/gallery/award2.jpg" alt="Best Speaker Award">
+                    <div class="gallery-overlay">
+                        <h3>Best Speaker Award</h3>
+                        <p>Tech conference speaker recognition</p>
+                        <a href="#" class="btn primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conference Photos -->
+            <div class="gallery-item scroll-animate" data-category="conferences">
+                <div class="gallery-image">
+                    <img src="images/gallery/conference1.jpg" alt="Tech Conference">
+                    <div class="gallery-overlay">
+                        <h3>Tech Conference</h3>
+                        <p>Keynote presentation</p>
+                        <a href="#" class="btn primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item scroll-animate" data-category="conferences">
+                <div class="gallery-image">
+                    <img src="images/gallery/conference2.jpg" alt="Developer Summit">
+                    <div class="gallery-overlay">
+                        <h3>Developer Summit</h3>
+                        <p>Panel discussion on cloud computing</p>
+                        <a href="#" class="btn primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Gallery -->
+    <section class="featured-gallery">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Featured Highlights</h2>
+            <div class="featured-slider">
+                <div class="featured-item scroll-animate">
+                    <img src="images/gallery/featured1.jpg" alt="Featured Project">
+                    <div class="featured-content">
+                        <h3>Enterprise Solution Launch</h3>
+                        <p>Launch event for a major enterprise software solution</p>
+                        <a href="#" class="btn primary">View Case Study</a>
+                    </div>
+                </div>
+                <div class="featured-item scroll-animate">
+                    <img src="images/gallery/featured2.jpg" alt="Team Collaboration">
+                    <div class="featured-content">
+                        <h3>Team Collaboration</h3>
+                        <p>Working with international development teams</p>
+                        <a href="#" class="btn primary">View Case Study</a>
+                    </div>
+                </div>
+                <div class="featured-item scroll-animate">
+                    <img src="images/gallery/featured3.jpg" alt="Technical Workshop">
+                    <div class="featured-content">
+                        <h3>Technical Workshop</h3>
+                        <p>Hands-on training session for developers</p>
+                        <a href="#" class="btn primary">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery CTA -->
+    <section class="gallery-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="scroll-animate">Share Your Experience</h2>
+                <p class="scroll-animate">Have photos from our events or projects? Share them with us!</p>
+                <a href="contact.html" class="btn primary">Submit Photos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Sandip Acharya</h3>
+                    <p>Senior .NET Developer</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/sandipacharya" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/sandipacharya" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/sandipacharya" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p class="copyright">&copy; 2024 Sandip Acharya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Gallery filtering
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.dataset.category;
+
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                button.classList.add('active');
+
+                // Filter gallery items
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Featured slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.featured-item');
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[index].style.display = 'block';
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Initialize slider
+        showSlide(0);
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+
+</html>
